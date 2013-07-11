@@ -1,0 +1,14 @@
+---
+  layout: layout
+---
+
+.container
+  - data.manufacturers.manufacturer.each do |m|
+    %h1=m.name
+    %ul
+      - m.products.each do |d|
+        %li
+          %span= d.name
+          &#151;
+          %span= d.desc
+

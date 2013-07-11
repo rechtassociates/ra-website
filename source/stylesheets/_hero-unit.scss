@@ -1,0 +1,106 @@
+// HERO UNIT
+// ---------
+
+// Updates for SASS:
+//  - replace @ with $
+//  - replace . with @include for mixins
+
+.hero {
+  position: relative;
+  background: rgba($white, 0.7);
+  overflow: visible;
+
+  > .row > .span12 { 
+    float: none; 
+    margin: 0 auto; 
+  }
+
+  &:before {
+    top: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    background-position: center center;
+    @include background-image(linear-gradient(left, darken($bodyBackground, 5%), lighten(#8C8B79, 30%), darken($bodyBackground, 5%)));
+  }
+
+  &:after {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    background-position: center center;
+    @include background-image(linear-gradient(left, darken($bodyBackground, 5%), lighten(#8C8B79, 20%), darken($bodyBackground, 5%)));
+  }
+}
+
+.hero-unit {
+  position: relative;
+  padding: 3em 0;
+  @include clearfix;
+  @include border-radius(6px);
+
+  .ctas { margin-top: 1.5em; }
+
+  h1 {
+    font-size: $baseFontSize * 2.5;
+    line-height: 1;
+    color: $headingsColor;
+    margin-bottom: 1em;
+    // letter-spacing: -1px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: $baseLineHeight * 1.5;
+    color: $heroUnitLeadColor;
+  }
+}
+
+.subhead {
+  text-align: center;
+  font-size: $baseFontSize * 1.5;
+}
+
+.down {
+  font-weight: normal;
+  font-family: $sansFontFamily;
+}
+
+.hero-nav.nav-tabs.nav-stacked.nav {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  border: none;
+
+  li { margin-bottom: 0.5em; }
+
+  a {
+    position: relative;
+    // font-size: $baseFontSize * 1.2;
+    padding: 0.5em 1em;
+    // color: #7EA67C;
+    font-weight: bold;
+    border: none;
+    @include background(linear-gradient(top, lighten(#8C8B79, 25%), lighten(#8C8B79, 10%)));
+  }
+}
+
+.btn-block { display: block; margin-bottom: 0.5em; font-weight: bold; }
+
+
+
+
+
+

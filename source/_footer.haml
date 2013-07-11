@@ -1,0 +1,25 @@
+%footer
+  .container
+    .row
+      .span12
+        %h1 Contact Us
+        .footer-content
+          %form#footer-form
+            .row
+              .span4.footer-contact
+                .control-group
+                  .controls
+                    %input#inputEmail{:placeholder => "Name", :type => "text"}/
+                .control-group
+                  .controls
+                    %input#inputPassword{:placeholder => "Email", :type => "email"}
+              .span8.footer-message
+                .control-group
+                  .controls
+                    %textarea{:rows => "6", :placeholder => "How can we help you?"}
+                .control-group.footer-contact-button.pull-right
+                  .controls
+                    %button.btn.btn-primary.btn-large{:type => "submit"} Contact us
+
+
+

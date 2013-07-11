@@ -1,0 +1,19 @@
+.navbar.navbar-fixed-top
+  .navbar-inner.inner-hr
+    .container
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "/"}
+        / Recht Associates
+        Blahh
+        %span.sub-head
+          Manufacturers' Representative
+      .nav-collapse
+        %ul.nav.pull-right
+          = header_navigation_item('linecard')
+          = header_navigation_item('distributors')
+          = header_navigation_item('products')
+          %li
+            %a#contact.btn.btn-info{:href => "#contact", :data => {:toggle => "modal", :target => "#contact-form"}} Contact Us

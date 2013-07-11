@@ -1,0 +1,170 @@
+---
+  layout: layout
+---
+
+- content_for(:hero_unit) do
+  .container-fluid.hero
+    .container
+      .row.hero-unit
+        .span9
+          %h1 A leading Northern Californian manufacturers' representative since 1962.
+
+          %h4 Want to learn more?
+          = link_to("Meet the Team &darr;", "#team", :class => "btn btn-mini btn-info down")
+          = link_to("Company History &darr;", "#history", :class => "btn btn-mini btn-info down")
+
+        .span3
+          %h2.subhead How can we help you?
+          = link_to("See our linecard", "/linecard/", :class => "btn btn-large btn-block btn-primary")
+          = link_to("View our distributors", "/distributors/", :class => "btn btn-large btn-block btn-primary")
+          = link_to("Search our products", "/products/", :class => "btn btn-large btn-block btn-primary")
+
+.container
+  .row.value-props
+    .span12
+      %h1.team-heading Why Recht Associates?
+    .span4.value-prop
+      %h1{:style => "font-size: 65px; padding: 0.25em;"} :)
+      %h2 Product and Market Focus
+      %ul.unstyled
+        %li First supporting detail
+        %li Second supporting detail
+        %li Third supporting detail
+    .span4.value-prop
+      %h1{:style => "font-size: 65px; padding: 0.25em;"} &amp;
+      %h2 Sales and Financial Strength
+      %ul.unstyled
+        %li First supporting detail
+        %li Second supporting detail
+        %li Third supporting detail
+    .span4.value-prop
+      %h1{:style => "font-size: 65px; padding: 0.25em;"} &copy;
+      %h2 Experience and Integrity
+      %ul.unstyled
+        %li First supporting detail
+        %li Second supporting detail
+        %li Third supporting detail
+
+  #team.team-management.row
+    .span12
+      %h1.team-heading The Team
+
+      .tabbable
+        %ul#team-control.nav.nav-tabs
+          %li= link_to("Outside Sales", "#outside-sales", :data => {:toggle => "tab"})
+          %li.active= link_to("Management", "#management", :data => {:toggle => "tab"})
+          %li= link_to("Inside Sales", "#inside-sales", :data => {:toggle => "tab"})
+
+        .tab-content
+          #outside-sales.tab-pane
+            .row
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Shirley Burres
+                %span.team-title Distribution Manager
+                %span.team-number (650) 237-4104
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Jim Holwerda
+                %span.team-title Outside Sales Engineer
+                %span.team-number (650) 237-4106
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Joel Merten
+                %span.team-title Outside Sales Engineer
+                %span.team-number (650) 237-4107
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+            .row
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Kate Collins
+                %span.team-title Outside Sales Engineer
+                %span.team-number (650) 237-4115
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Darren Simon
+                %span.team-title Outside Sales Engineer
+                %span.team-number (650) 237-4115
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Thom Bahrs
+                %span.team-title Outside Sales Engineer
+                %span.team-number (650) 237-4115
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+
+          #management.tab-pane.active
+            .row
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name David Recht
+                %span.team-title President
+                %span.team-number (650) 237-4109
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name John Fullem
+                %span.team-title Vice President
+                %span.team-number (650) 237-4108
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Patrick Kehoe
+                %span.team-title Vice President
+                %span.team-number (650) 237-4111
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+
+          #inside-sales.tab-pane
+            .row
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Jennifer Aufang
+                %span.team-title Inside Sales Rep/Customer Service
+                %span.team-number (650) 237-4104
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Kristen Perryman
+                %span.team-title Inside Sales Rep/Customer Service
+                %span.team-number (650) 237-4106
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Melinda Tinio
+                %span.team-title Inside Sales Rep/Customer Service
+                %span.team-number (650) 237-4107
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+            .row
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Rebecca Spinelli
+                %span.team-title Inside Sales Rep/Customer Service
+                %span.team-number (650) 237-4104
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Kelly Chao
+                %span.team-title Commission Specialist
+                %span.team-number (650) 237-4106
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+              .span4.team-member
+                = image_tag("http://dummyimage.com/100x100/f2f2f2/666666.jpg", :class => "team-photo")
+                %span.team-name Michael Powers
+                %span.team-title Bookkeeping
+                %span.team-number (650) 237-4107
+                %span.team-email= link_to("drect@rechtassociates.com", "mailto:drecht@rechtassociates.com")
+
+  #history.row.history
+    .span12
+      %h1.team-heading Our History
+    .row
+    .span12
+      %blockquote
+        %p Elliott Recht established Recht Associates in 1962 in Los Altos, CA after having worked as an electrical engineer for IBM and Beckman Instruments and as a manufacturers' representative for Ault Associates.
+      %p In its first two decades Recht Associates grew rapidly by focusing on the early electronics industry that was centered on analytical equipment, microwave and defense products. Key lines in the 1960s and 1970s were Potter & Brumfield, Microwave Associates, IMC Magnetics and ITT Canon.
+      %p As the electronics industry grew in the San Francisco Bay Area, Recht Associates expanded product offerings in order to service the growing computer product and consumer applications associated with the beginning of Silicon Valley. The company's focus remained in the passive and electromechanical components area which brought well known manufacturers to Recht Associates such as Murata Electronics, Panasonic and Elcon Products.
+      %p In 1988 ownership transferred from Elliott and Dru Reynolds to David Recht and Glenn Miller and is now shared by David Recht, Patrick Kehoe and John Fullem. Since 2001 Recht Associates has continued to prosper by leveraging long term relationships with customers, principals and employees. Many of Recht Associates' employees have tenure with the company exceeding 15 years. This stability has enabled Recht Associates to continue the work of maximizing our manufacturers' return by utilizing our deep knowledge of customers and the marketplace. Recht Associates remains one of the leading manufacturers' representatives in northern California and is known for its dedicated and disciplined approach for bringing value to our manufacturers and customers.
+
